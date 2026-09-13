@@ -1,0 +1,299 @@
+
+
+body {
+    margin: 0rem;
+    padding: 0rem;
+    background-color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* HEADER */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E4E4E7;
+    color: #3F3F46; 
+    
+    padding-inline: 2.5rem;
+    padding-bottom: 1rem;
+    padding-top:1rem;
+
+    
+
+    border-bottom: solid 2px rgb(113, 113, 113);
+}
+
+
+/* Brand Title */
+.brand-title{
+    display :flex;
+    gap: 0rem;
+    text-decoration: none;
+    color: black;
+}
+
+.brand-title{
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-content: initial;
+
+}
+
+.data-span{
+    color: #10B981;
+}
+
+/* Nav list */
+
+.nav-ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+    align-items: center;
+    padding: 0rem;
+    margin: 0rem;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.ul-item{
+    padding: 0.9rem;
+    border-radius: 10rem;
+    transition: background-color 0.3s ease;
+}
+.ul-item:hover{
+    
+    background-color: #10B981;
+
+}
+
+
+
+
+
+
+
+/* main */
+
+/* hero */
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 80vh; 
+}
+
+.hero-text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 3rem;
+  background-color: #10B981;
+  color: #FFFFFF;
+}
+
+.hero-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-motto {
+  font-size: 6.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 2rem 0;
+}
+
+.hero-image {
+  background-image: url("images/hero4.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* vad vi gör */
+
+.body-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: 500;
+    padding-inline: 3rem;
+    padding-top: 1rem;
+}
+
+.what-we-do-card {
+    border: solid 2px #E4E4E7;
+    border-radius: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-inline: 2rem;
+    margin-inline: 7rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #10B981;
+    margin: 0;
+}
+
+.card-answer {
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.card-options {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    display: flex;
+    align-items: stretch;
+    justify-content:space-around;
+    gap: 1rem;
+}
+
+.card {
+    border: solid 2px #E4E4E7;
+    border-radius: 1rem;
+    flex: 1; 
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    box-sizing: border-box; 
+}
+
+.card > span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-ul {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    color: #10B981;
+    gap: 2rem;
+    font-size: 1.1rem;
+}
+
+.a-card {
+    border: solid 1px black;
+    padding: 1rem;
+    border-radius: 10rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.a-card:hover {
+    background-color: #10B981;
+}
+
+
+/* footer */
+
+.site-footer {
+  background-color: #F4F4F5; 
+  border-top: 1px solid #E4E4E7;
+  color: #3F3F46;
+  padding-top: 3rem;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0F172A;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.footer-brand p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #52525B;
+}
+
+.footer-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0F172A;
+  margin-bottom: 1rem;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-nav a,
+.footer-contact a {
+  color: #52525B;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-nav a:hover,
+.footer-contact a:hover {
+  color: #10B981;
+  text-decoration: underline;
+}
+
+.footer-contact address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.footer-bottom {
+  border-top: 1px solid #E4E4E7;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #71717A;
+  background-color: #E4E4E7; 
+}
